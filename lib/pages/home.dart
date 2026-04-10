@@ -20,12 +20,6 @@ class Home extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                   child: Column(
                     children: [
-                      Icon(
-                        Icons.location_city,
-                        size: 80,
-                        color: Colors.red[700],
-                      ),
-                      const SizedBox(height: 10),
                       const Text(
                         "London Culture & Tech Guide",
                         textAlign: TextAlign.center,
@@ -34,6 +28,8 @@ class Home extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      const SizedBox(height: 10),
+                      Image.asset("lib/images/londres-nuit.jpeg", height: 350,),
                       const SizedBox(height: 10),
                       const Text(
                         "A simple website about London, its culture and technology.",
