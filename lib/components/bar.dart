@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:london/pages/claudia.dart';
 import 'package:london/pages/home.dart';
 
 class Bar extends StatelessWidget {
@@ -38,7 +39,7 @@ class Bar extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return Home();//TODO: cambiar a otra página
+                    return Claudia();
                   },
                 ),
               );
