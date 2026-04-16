@@ -6,7 +6,10 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red[50],
+      decoration: BoxDecoration(
+        color: Colors.red[100],
+        borderRadius: BorderRadius.circular(30),
+      ),
       padding: const EdgeInsets.all(20),
       child: Column(
         children: [
@@ -16,7 +19,7 @@ class Header extends StatelessWidget {
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 10),
-          Image.asset("lib/images/londres-nuit.jpeg", height: 350),
+          ClipRRect(child: Image.asset("lib/images/londres-nuit.jpeg", height: 350, ), borderRadius: BorderRadius.circular(30),),
         ],
       ),
     );

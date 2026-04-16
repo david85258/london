@@ -3,15 +3,19 @@ import 'package:london/pages/claudia.dart';
 import 'package:london/pages/home.dart';
 
 class Bar extends StatelessWidget {
-  const Bar({super.key});
+
+  const Bar({super.key, required this.isHome});
+
+  final bool isHome;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.red[800],
-      padding: const EdgeInsets.only(top: 40, left: 16, right: 16, bottom: 16),
+      padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           GestureDetector(
             onTap: () {
@@ -39,13 +43,13 @@ class Bar extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return Claudia();
+                    return isHome ? Claudia() : Home();
                   },
                 ),
               );
             },
-            child: const Text(
-              "Click here",
+            child: Text(
+              isHome ? "Second Page" : "Home",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,

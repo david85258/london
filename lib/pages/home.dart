@@ -12,11 +12,12 @@ class Home extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Bar(),
+          const Bar(isHome: true,),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 children: [
+                  SizedBox(height: 16),
                   Header(),
                   const SectionCard(
                     title: "About the Application / Website",
@@ -53,23 +54,6 @@ Equality and inclusion are strongly promoted.
 Freedom of expression is an important value.
             
 Environmental awareness is growing, with many people supporting sustainability.""",
-                  ),
-                  
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: Colors.red[100],
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: const Text(
-                      "This home page was made in Flutter and is about London.",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
                   ),
                 ],
               ),

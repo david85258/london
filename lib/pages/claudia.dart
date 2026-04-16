@@ -12,11 +12,12 @@ class Claudia extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Bar(),
+          const Bar(isHome: false,),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 children: [
+                  SizedBox(height: 16),
                   Header(),
                   const SectionCard(
                     title: "Software development jobs in London",
@@ -55,20 +56,6 @@ Big tech companies and startups are located in areas like Silicon Roundabout (Sh
                         """What I like most about London is its combination of history and modern technology. 
 You can see historic places like Buckingham Palace and, at the same time, find innovative tech companies and startups. 
 It is also very multicultural, which makes it an exciting place to live and work.""",
-                  ),
-              
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: Colors.red[100],
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: const Text(
-                      "This home page was made in Flutter and is about London.",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                    ),
                   ),
                 ],
               ),
