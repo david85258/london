@@ -51,9 +51,9 @@ Big tech companies and startups are located in areas like Silicon Roundabout (Sh
     - Slang: "Fancy" = want/like""",
                   ),
                   const SectionCard(
-                    title: "What I like about London",
+                    title: "What we like about London",
                     content:
-                        """What I like most about London is its combination of history and modern technology. 
+                        """What we like most about London is its combination of history and modern technology. 
 You can see historic places like Buckingham Palace and, at the same time, find innovative tech companies and startups. 
 It is also very multicultural, which makes it an exciting place to live and work.""",
                   ),
