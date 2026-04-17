@@ -8,7 +8,7 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: ColorsApp.headerColor,
+        color: ColorsApp.barColor,
         borderRadius: BorderRadius.circular(30),
       ),
       padding: const EdgeInsets.all(20),
