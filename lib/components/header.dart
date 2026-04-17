@@ -20,6 +20,7 @@ class Header extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           ClipRRect(child: Image.asset("lib/images/londres-nuit.jpeg", height: 350, ), borderRadius: BorderRadius.circular(30),),
+          const SizedBox(height: 5),
         ],
       ),
     );
