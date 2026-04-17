@@ -38,6 +38,7 @@ class Bar extends StatelessWidget {
               ),
             ),
           ),
+          Text("David & Claudia", style: const TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),),
           GestureDetector(
             onTap: () {
               Navigator.push(
