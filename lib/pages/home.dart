@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:london/Colors_app.dart';
 import 'package:london/components/bar.dart';
 import 'package:london/components/header.dart';
 import 'package:london/components/section_card.dart';
@@ -9,6 +10,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorsApp.backgroundColor,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

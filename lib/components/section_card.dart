@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:london/Colors_app.dart';
 
 class SectionCard extends StatelessWidget {
   const SectionCard({
@@ -16,7 +17,7 @@ class SectionCard extends StatelessWidget {
       margin: const EdgeInsets.all(16),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: ColorsApp.cardColor,
         border: Border.all(color: Colors.grey.shade300),
         borderRadius: BorderRadius.circular(12),
       ),
@@ -28,13 +29,13 @@ class SectionCard extends StatelessWidget {
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: Colors.red[800],
+              color: ColorsApp.titleColor,
             ),
           ),
           const SizedBox(height: 10),
           Text(
             content,
-            style: const TextStyle(fontSize: 16),
+            style: TextStyle(fontSize: 16, color: ColorsApp.textColor),
           ),
         ],
       ),

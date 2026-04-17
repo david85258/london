@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:london/Colors_app.dart';
 import 'package:london/pages/claudia.dart';
 import 'package:london/pages/home.dart';
 
@@ -11,7 +12,7 @@ class Bar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red[800],
+      color: ColorsApp.barColor,
       padding: const EdgeInsets.only(top: 16, left: 16, right: 16, bottom: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
