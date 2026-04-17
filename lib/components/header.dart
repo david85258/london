@@ -19,7 +19,7 @@ class Header extends StatelessWidget {
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 10),
-          ClipRRect(child: Image.asset("lib/images/londres-nuit.jpeg", height: 350, ), borderRadius: BorderRadius.circular(30),),
+          ClipRRect(borderRadius: BorderRadius.circular(30),child: Image.asset("lib/images/londres-nuit.jpeg", height: 350),),
         ],
       ),
     );
